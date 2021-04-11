@@ -39,6 +39,39 @@ for x in num :
     for key in ref :
         print(key)'''
 
+
+#dictionary.3
+'''
+customer = {"1234" : "4567", "8910" : "1112"}
+ID = input("무슨 비밀번호가 궁금하느냐:")
+
+if ID in customer :
+    print(customer[ID])
+
+else :
+    print("존재하지 않는 아이디입니다.")
+'''
+
+#dictionary.4
+'''
+phone = {}
+while True :
+    person = input("(입력모드) 이름을 입력하세요:")
+    num = input("(입력모드) 전화번호를 입력하세요:")
+    phone[person] = num
+
+    if person == "" :
+        break
+
+while True :
+    who = input("(검색모드) 이름을 입력하세요:")
+
+    if who in phone or who2 in phone :
+        print( "전화번호는", phnoe[who], "입니다.")
+        break
+    else :
+        who2 = input("찾는 이름이 없습니다. 이름을 입력하세요:")
+'''        
 #1. birth
 '''birth=int(input("생년월일을 입력하세요(예:20000412):"))
 year=birth[0:4]
@@ -50,10 +83,11 @@ else :
     print("올바른 생년월일입니다.")'''
 
 #2.print reverse_via_reversed()
-'''s=input("문자열을 입력하시오:")
+'''
+s=input("문자열을 입력하시오:")
 rs="".join(reversed(s))
-print(rs)'''
-
+print(rs)
+'''
 #2.print reverse_via_none_reverse()
 '''s=input("문자열을 입력하시오:")
 rs=""
@@ -96,6 +130,7 @@ for i in s :
 print(ocount)'''
 
 #5.how old are you?
+'''
 old=float(input("당신의 나이를 입력하세요:"))
 while True :
     if old < 0 or old != int(old) :
@@ -104,4 +139,4 @@ while True :
     else :
         print("당신의 나이는 %d 이군요" %old)
         break
-    
+'''    
